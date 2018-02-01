@@ -66,6 +66,7 @@ def add_entry():
     return redirect(url_for('show_entries'))
 
 # DONT USE PLAIN TEXT STORAGE IN PRODUCTION!
+# app.config is set to defaults earlier
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
